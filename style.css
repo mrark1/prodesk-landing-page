@@ -1,0 +1,221 @@
+*{
+        margin:0;
+            padding:0;
+                box-sizing:border-box;
+                    font-family:Arial, sans-serif;
+                    }
+
+                    html{
+                        scroll-behavior:smooth;
+                        }
+
+                        body{
+                            background:#fff;
+                                color:#222;
+                                    transition:0.4s;
+                                    }
+
+                                    /* NAVBAR */
+
+                                    .navbar{
+                                        position:sticky;
+                                            top:0;
+                                                z-index:1000;
+
+                                                    display:flex;
+                                                        justify-content:space-between;
+                                                            align-items:center;
+
+                                                                padding:15px 8%;
+                                                                    background:#0a192f;
+                                                                    }
+
+                                                                    .logo{
+                                                                        color:white;
+                                                                            font-size:24px;
+                                                                                font-weight:bold;
+                                                                                }
+
+                                                                                .nav-links{
+                                                                                    display:flex;
+                                                                                        list-style:none;
+                                                                                            gap:25px;
+                                                                                            }
+
+                                                                                            .nav-links a{
+                                                                                                color:white;
+                                                                                                    text-decoration:none;
+                                                                                                    }
+
+                                                                                                    .nav-actions{
+                                                                                                        display:flex;
+                                                                                                            align-items:center;
+                                                                                                                gap:15px;
+                                                                                                                }
+
+                                                                                                                #themeBtn{
+                                                                                                                    border:none;
+                                                                                                                        padding:8px 12px;
+                                                                                                                            border-radius:6px;
+                                                                                                                                cursor:pointer;
+                                                                                                                                }
+
+                                                                                                                                .hamburger{
+                                                                                                                                    display:none;
+                                                                                                                                        color:white;
+                                                                                                                                            font-size:24px;
+                                                                                                                                                cursor:pointer;
+                                                                                                                                                }
+
+                                                                                                                                                /* HERO */
+
+                                                                                                                                                .hero{
+                                                                                                                                                    height:100vh;
+
+                                                                                                                                                        display:flex;
+                                                                                                                                                            justify-content:center;
+                                                                                                                                                                align-items:center;
+
+                                                                                                                                                                    text-align:center;
+
+                                                                                                                                                                        background:linear-gradient(
+                                                                                                                                                                            rgba(0,0,0,0.6),
+                                                                                                                                                                                rgba(0,0,0,0.6)),
+                                                                                                                                                                                    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+
+                                                                                                                                                                                        background-size:cover;
+                                                                                                                                                                                            background-position:center;
+
+                                                                                                                                                                                                color:white;
+                                                                                                                                                                                                }
+
+                                                                                                                                                                                                .hero-content{
+                                                                                                                                                                                                    max-width:700px;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    .hero h1{
+                                                                                                                                                                                                        font-size:3rem;
+                                                                                                                                                                                                            margin-bottom:20px;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            .hero p{
+                                                                                                                                                                                                                margin-bottom:25px;
+                                                                                                                                                                                                                    line-height:1.7;
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                    .btn{
+                                                                                                                                                                                                                        background:#007bff;
+                                                                                                                                                                                                                            color:white;
+
+                                                                                                                                                                                                                                padding:12px 25px;
+                                                                                                                                                                                                                                    border-radius:8px;
+                                                                                                                                                                                                                                        text-decoration:none;
+
+                                                                                                                                                                                                                                            transition:.3s;
+                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                            .btn:hover{
+                                                                                                                                                                                                                                                transform:scale(1.05);
+                                                                                                                                                                                                                                                    background:#0056d2;
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                    /* SERVICES */
+
+                                                                                                                                                                                                                                                    .services{
+                                                                                                                                                                                                                                                        padding:80px 8%;
+                                                                                                                                                                                                                                                            text-align:center;
+                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                            .services h2{
+                                                                                                                                                                                                                                                                margin-bottom:40px;
+                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                .service-container{
+                                                                                                                                                                                                                                                                    display:grid;
+                                                                                                                                                                                                                                                                        grid-template-columns:repeat(3,1fr);
+                                                                                                                                                                                                                                                                            gap:25px;
+                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                            .card{
+                                                                                                                                                                                                                                                                                padding:30px;
+                                                                                                                                                                                                                                                                                    background:#f4f4f4;
+                                                                                                                                                                                                                                                                                        border-radius:12px;
+
+                                                                                                                                                                                                                                                                                            transition:.3s;
+                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                            .card i{
+                                                                                                                                                                                                                                                                                                font-size:40px;
+                                                                                                                                                                                                                                                                                                    margin-bottom:15px;
+                                                                                                                                                                                                                                                                                                        color:#007bff;
+                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                        .card:hover{
+                                                                                                                                                                                                                                                                                                            transform:translateY(-8px);
+                                                                                                                                                                                                                                                                                                                box-shadow:0 8px 20px rgba(0,0,0,0.2);
+                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                /* FOOTER */
+
+                                                                                                                                                                                                                                                                                                                footer{
+                                                                                                                                                                                                                                                                                                                    background:#0a192f;
+                                                                                                                                                                                                                                                                                                                        color:white;
+                                                                                                                                                                                                                                                                                                                            text-align:center;
+                                                                                                                                                                                                                                                                                                                                padding:30px;
+                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                .socials{
+                                                                                                                                                                                                                                                                                                                                    margin-top:15px;
+                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                    .socials a{
+                                                                                                                                                                                                                                                                                                                                        color:white;
+                                                                                                                                                                                                                                                                                                                                            margin:0 10px;
+                                                                                                                                                                                                                                                                                                                                                font-size:20px;
+                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                /* DARK MODE */
+
+                                                                                                                                                                                                                                                                                                                                                .dark-theme{
+                                                                                                                                                                                                                                                                                                                                                    background:#111827;
+                                                                                                                                                                                                                                                                                                                                                        color:white;
+                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                        .dark-theme .card{
+                                                                                                                                                                                                                                                                                                                                                            background:#1f2937;
+                                                                                                                                                                                                                                                                                                                                                                color:white;
+                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                /* MOBILE */
+
+                                                                                                                                                                                                                                                                                                                                                                @media(max-width:768px){
+
+                                                                                                                                                                                                                                                                                                                                                                    .service-container{
+                                                                                                                                                                                                                                                                                                                                                                            grid-template-columns:1fr;
+                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                    .nav-links{
+                                                                                                                                                                                                                                                                                                                                                                                            display:none;
+                                                                                                                                                                                                                                                                                                                                                                                                    flex-direction:column;
+
+                                                                                                                                                                                                                                                                                                                                                                                                            position:absolute;
+                                                                                                                                                                                                                                                                                                                                                                                                                    top:70px;
+                                                                                                                                                                                                                                                                                                                                                                                                                            right:0;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                    width:200px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                            background:#0a192f;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    padding:20px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            .nav-links.active{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    display:flex;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            .hamburger{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    display:block;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            .hero h1{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    font-size:2rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }}
