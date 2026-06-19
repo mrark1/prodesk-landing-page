@@ -1,6 +1,6 @@
 # Prodesk IT Landing Page
 
-Sprint 01 Submission
+## Sprint 01 Submission
 
 ## Features
 
@@ -21,8 +21,19 @@ Sprint 01 Submission
 
 ## Live Demo
 
-Add your Vercel/Netlify URL here
+https://prodesk-landing-page-three.vercel.app/
 
 ## Screenshot
+ Main Page :
 
-Add screenshot here
+ ![Main Page](image.png)
+
+Services Page :
+In Light Mode
+
+ ![Services Page : In Light Mode](image-1.png)
+
+ Services Page :
+In Dark Mode
+
+![Services Page : In Dark Mode](image-2.png)
